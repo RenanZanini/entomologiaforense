@@ -12,9 +12,7 @@ Repositório destinado à divulgação científica da disciplina “Entomologia 
   - Quiz Individual  
   - Passa ou Repassa (30 s por pergunta)  
   - Show do Milhão (progressão de prêmios)
-- **Baralho “Detetive Entomológico”** (PDF para impressão)
-- Modelos de cartas de insetos, cenas e fatores ambientais
-- Roteiro completo de atividade lúdica para ensino fundamental e médio
+  - Roteiro completo de atividade lúdica para ensino fundamental e médio
 
 Licença
 
