@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Entomologia Forense - Entomologia para Fora da Academia - Profª. Dra. Viviane Gianluppi Ferro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪲</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela de Início -->
+        <div id="home-screen" class="screen active">
+            <div class="header">
+                <div class="logo">
+                    <div class="bug-icon">🪲</div>
+                    <h1>Quiz de Entomologia Forense</h1>
+                </div>
+                <p class="subtitle">Disciplina de entomologia para fora da academia - Profª. Dra. Viviane Gianluppi Ferro</p>
+            </div>
+            
+            <div class="welcome-card">
+                <h2>Bem-vindo ao Quiz de Entomologia Forense!</h2>
+                <p>Teste seus conhecimentos sobre insetos e sua aplicação em investigações criminais.</p>
+                
+                <div class="difficulty-selection">
+                    <h3>Selecione o nível de dificuldade:</h3>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn" data-difficulty="easy">
+                            <span class="difficulty-icon">🟢</span>
+                            <span class="difficulty-name">Fácil</span>
+                            <span class="difficulty-desc">Conceitos básicos</span>
+                        </button>
+                        <button class="difficulty-btn" data-difficulty="medium">
+                            <span class="difficulty-icon">🟡</span>
+                            <span class="difficulty-name">Médio</span>
+                            <span class="difficulty-desc">Conhecimento intermediário</span>
+                        </button>
+                        <button class="difficulty-btn" data-difficulty="hard">
+                            <span class="difficulty-icon">🔴</span>
+                            <span class="difficulty-name">Difícil</span>
+                            <span class="difficulty-desc">Conhecimento avançado</span>
+                        </button>
+                        <button class="difficulty-btn" data-difficulty="mixed">
+                            <span class="difficulty-icon"></span>
+                            <span class="difficulty-name">Misto</span>
+                            <span class="difficulty-desc">Todos os níveis</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="user-input">
+                    <label for="student-name">Nome do estudante (opcional):</label>
+                    <input type="text" id="student-name" placeholder="Digite seu nome">
+                </div>
+                
+                <button id="start-quiz" class="start-btn" disabled>Iniciar Quiz</button>
+            </div>
+        </div>
+
+        <!-- Tela do Quiz -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-text">Pergunta <span id="current-question">1</span> de <span id="total-questions">10</span></span>
+                </div>
+                <div class="quiz-info">
+                    <span class="difficulty-badge" id="current-difficulty">Fácil</span>
+                    <span class="score">Pontuação: <span id="current-score">0</span></span>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-category" id="question-category">Conceitos Básicos</div>
+                <h2 class="question-text" id="question-text">Carregando pergunta...</h2>
+                
+                <div class="answers-container" id="answers-container">
+                    <!-- Respostas serão inseridas aqui dinamicamente -->
+                </div>
+                
+                <div class="quiz-controls">
+                    <button id="next-question" class="next-btn" disabled>Próxima Pergunta</button>
+                    <button id="quit-quiz" class="quit-btn">Sair do Quiz</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tela de Resultados -->
+        <div id="results-screen" class="screen">
+            <div class="results-card">
+                <div class="results-header">
+                    <div class="trophy-icon">🏆</div>
+                    <h2>Quiz Concluído!</h2>
+                </div>
+                
+                <div class="results-content">
+                    <div class="student-info">
+                        <h3 id="results-student-name">Estudante</h3>
+                        <p class="results-difficulty">Nível: <span id="results-difficulty">Fácil</span></p>
+                    </div>
+                    
+                    <div class="score-summary">
+                        <div class="final-score">
+                            <span class="score-number" id="final-score">0</span>
+                            <span class="score-total">/ <span id="max-score">100</span></span>
+                        </div>
+                        <div class="score-percentage" id="score-percentage">0%</div>
+                    </div>
+                    
+                    <div class="performance-details">
+                        <div class="stat">
+                            <span class="stat-label">Respostas Corretas:</span>
+                            <span class="stat-value" id="correct-answers">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Total de Perguntas:</span>
+                            <span class="stat-value" id="total-answered">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Tempo Total:</span>
+                            <span class="stat-value" id="total-time">0:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="performance-message" id="performance-message">
+                        Excelente trabalho!
+                    </div>
+                </div>
+                
+                <div class="results-actions">
+                    <button id="restart-quiz" class="restart-btn">Fazer Novo Quiz</button>
+                    <button id="print-results" class="print-btn">Imprimir Resultados</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

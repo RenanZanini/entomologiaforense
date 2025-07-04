@@ -62,7 +62,7 @@ quiz_entomologia_offline/
 - Tempos de desenvolvimento específicos
 - Características morfológicas detalhadas
 
-###  Misto (7 pontos por pergunta)
+### 🌈 Misto (7 pontos por pergunta)
 - Combinação de todos os níveis
 - 3 perguntas fáceis + 4 médias + 3 difíceis
 
@@ -144,7 +144,7 @@ Modifique o arquivo `styles.css` conforme necessário.
 
 Este quiz foi desenvolvido especificamente para a disciplina de Entomologia para Fora da Academia sob orientação da Profª. Dra. Viviane Gianluppi Ferro. Para dúvidas sobre o conteúdo científico, consulte o autor responsável.
 
-## Autoria
+## Licença
 
 Este material é destinado para uso educacional na disciplina de Entomologia. O conteúdo das perguntas é baseado em literatura científica da área de entomologia forense.
 Autor: Renan Zanini Porto
@@ -152,15 +152,4 @@ Autor: Renan Zanini Porto
 
 **Desenvolvido para a disciplina de Entomologia para Fora da Academia - Profª. Dra. Viviane Gianluppi Ferro**  
 *Versão Offline - Funciona sem internet*
-
-
-#Licença
-
-Conteúdo educacional disponível para uso livre não comercial sob a licença Creative Commons CC BY-NC 4.0.
-Código-fonte distribuído sob a licença MIT.
-
-
-Desenvolvido por Renan Zanini Porto
-Orientadora: Profa. Dra. Viviane Gianluppi Ferro
-Entomologia Para Fora da Academia - UFRGS
 
